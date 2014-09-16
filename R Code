@@ -1,4 +1,4 @@
-K=500 		# values : 5,50,100,250 y 500
+'K=500 		# values : 5,50,100,250 y 500'
 PHI=1 		# values : 0.1, 0.5 y 1.0
 iteracion=2000	# values : 150, 2000
 tiempo = 3000	# values : >=150
