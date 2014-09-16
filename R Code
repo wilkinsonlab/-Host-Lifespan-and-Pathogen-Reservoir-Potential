@@ -79,12 +79,12 @@ for (k in 1:9) {
 		dS[i]=THETA[i]-(PHI *(b11+b12)*(Z[i-1]+Z2[i-1])*(K1-I[i-1])/K)-m*(K1-I[i-1])
 		dI[i]=(PHI*(b11+b12)*(Z[i-1]+Z2[i-1])*(K1-I[i-1])/K)-((m+v)*I[i-1])
 		dX[i]=PSI[i]-((PHI*a*I[i-1] + PHI2*a2*I2[i-1])*X[i-1]/K)+(tau*Z[i-1]/K)-(A*X[i-1]/K)
-		dZ[i]=    	 ((PHI*a*I[i-1] + PHI2*a2*I2[i-1])*X[i-1]/K)-(tau*Z[i-1]/K)-(A*Z[i-1]/K)
+		dZ[i]=       ((PHI*a*I[i-1] + PHI2*a2*I2[i-1])*X[i-1]/K)-(tau*Z[i-1]/K)-(A*Z[i-1]/K)
 
 		dS2[i]=THETA2[i]-((PHI *(b21+b22)*(Z[i-1]+Z2[i-1])*(K2-I2[i-1])/K))-m2*(K2-I2[i-1])
 		dI2[i]=(PHI*(b21+b22)*(Z[i-1]+Z2[i-1])*(K2-I2[i-1])/K)-((m2+v2)*I2[i-1])
 		dX2[i]=PSI2[i]-((PHI*a*I[i-1] + PHI3*a2*I2[i-1])*X2[i-1]/K)+(tau*Z2[i-1]/K)-(A*X2[i-1]/K)
-		dZ2[i]=    	   ((PHI*a*I[i-1] + PHI3*a2*I2[i-1])*X2[i-1]/K)-(tau*Z2[i-1]/K)-(A*Z2[i-1]/K)
+		dZ2[i]=        ((PHI*a*I[i-1] + PHI3*a2*I2[i-1])*X2[i-1]/K)-(tau*Z2[i-1]/K)-(A*Z2[i-1]/K)
 
 		S[i]=dS[i]+S[i-1]
 		I[i]=dI[i]+I[i-1]
